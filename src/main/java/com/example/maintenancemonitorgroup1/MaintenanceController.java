@@ -39,4 +39,11 @@ public class MaintenanceController {
             return code1+notOk+code2;
         }
     }
+
+
+    @GetMapping("/api/message/set")
+    public String message(String m) {
+        value = m;
+        return "ok";
+    }
 }
