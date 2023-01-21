@@ -46,4 +46,10 @@ public class MaintenanceController {
         value = m;
         return "ok";
     }
+
+    @GetMapping("/api/message/reset")
+    public String messageReset() {
+        value = text;
+        return "ok";
+    }
 }
